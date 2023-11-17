@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.css';
 import { UIProvider } from '@/context/ui/UIProvider';
-import { Header } from '@/components/ui/Header copy';
+import { Header } from '@/components/ui/Header';
 
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Clone Tesla Landing',
