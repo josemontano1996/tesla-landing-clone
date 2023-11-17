@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { Header } from '@/components/ui/Header';
 import { UIProvider } from '@/context/ui/UIProvider';
+import { Header } from '@/components/ui/Header copy';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <UIProvider>
       <html lang='en'>
         <body>
-          <Header />
+          <Header/>
           <main>{children}</main>
         </body>
       </html>
