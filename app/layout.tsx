@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { Header } from '@/components/ui/header';
-
+import { Header } from '@/components/ui/Header';
+import { UIProvider } from '@/context/ui/UIProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -13,12 +13,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang='en'>
-      <body >
-        <Header />
-        <main>{children}</main>
-      </body>
-    </html>
+    <UIProvider>
+      <html lang='en'>
+        <body>
+          <Header />
+          <main>{children}</main>
+        </body>
+      </html>
+    </UIProvider>
   );
 }
 
