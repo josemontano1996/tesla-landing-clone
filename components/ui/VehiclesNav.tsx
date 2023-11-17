@@ -25,7 +25,7 @@ export const VehiclesNav = () => {
       >
         <ul className='flex flex-wrap col-span-2 pl-[10vw] gap-4 '>
           <li className='text-center'>
-            <Image width={175} height={300} src='/images/Model-S.avif' alt='Model S car' />
+            <Image width={175} height={300} src='/images/Model-S.png' alt='Model S car' />
             <h3>Model S</h3>
             <p>
               <a href='#' className='inline-block mr-4 underline text-sm font-thin'>
@@ -37,7 +37,7 @@ export const VehiclesNav = () => {
             </p>
           </li>
           <li className='text-center'>
-            <Image width={175} height={250} src='/images/Model-3.avif' alt='Model S car' />
+            <Image width={175} height={250} src='/images/Model-3.png' alt='Model S car' />
             <h3>Model 3</h3>
             <p>
               <a href='#' className='inline-block mr-4 underline text-sm font-thin'>
@@ -49,7 +49,7 @@ export const VehiclesNav = () => {
             </p>
           </li>
           <li className='text-center'>
-            <Image width={175} height={250} src='/images/Model-X.avif' alt='Model S car' />
+            <Image width={175} height={250} src='/images/Model-X.png' alt='Model S car' />
             <h3>Model X</h3>
             <p>
               <a href='#' className='inline-block mr-4 underline text-sm font-thin'>
@@ -61,7 +61,7 @@ export const VehiclesNav = () => {
             </p>
           </li>
           <li className='text-center'>
-            <Image width={175} height={250} src='/images/Model-Y.avif' alt='Model S car' />
+            <Image width={175} height={250} src='/images/Model-Y.png' alt='Model S car' />
             <h3>Model Y</h3>
             <p>
               <a href='#' className='inline-block mr-4 underline text-sm font-thin'>
