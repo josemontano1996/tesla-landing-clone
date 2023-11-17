@@ -29,7 +29,7 @@ export default function Home() {
           </footer>
         </div>
         <div className='absolute top-0 bottom-0 z-10'>
-          <video autoPlay muted loop src='/videos/tesla-video-1.webm'></video>
+          <video className='h-screen w-screen object-cover' autoPlay muted loop src='/videos/tesla-video-1.webm'></video>
         </div>
       </section>
     </>
