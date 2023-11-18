@@ -15,7 +15,7 @@ export const HeaderSectionProvider = () => {
     <section className="fixed top-0 z-30 flex h-screen w-screen">
       {sectionDisplay === 'vehicles' && <VehiclesNav />}
       {sectionDisplay === 'energy' && <EnergyNav />}
-      {sectionDisplay !== 'charging' && <CharginNav />}
+      {sectionDisplay === 'charging' && <CharginNav />}
       {sectionDisplay === 'discover' && <DiscoverNav />}
       {sectionDisplay === 'shop' && <ShopNav />}
     </section>

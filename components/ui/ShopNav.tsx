@@ -1,6 +1,11 @@
 import { useContext, useState } from 'react';
 import { UIContext } from '@/context/ui/UIContext';
 import Image from 'next/image';
+import charger from '@/public/images/Mega-Menu-Shop-Charging.png';
+import vehicleAccessories from '@/public/images/Mega-Menu-Shop-Vehicle-Accessories.png';
+import apparel from '@/public/images/Mega-Menu-Shop-Apparel.png';
+import lifeStyle from '@/public/images/Mega-Menu-Shop-Lifestyle.png';
+import lifestyle from '@/public/images/Mega-Menu-Shop-Lifestyle.png';
 
 export const ShopNav = () => {
   const { onSectionDisplay } = useContext(UIContext);
@@ -18,146 +23,52 @@ export const ShopNav = () => {
   return (
     <div className="absolute top-0 z-30 flex h-screen w-screen">
       <section
-        className={`absolute top-0 z-30 grid w-full animate-fadeIn grid-cols-3 bg-white pb-10 pt-28 
+        className={`absolute top-0 z-30  flex w-full animate-fadeIn justify-center bg-white pb-10 pt-28 text-center 
         ${hoverOut && 'animate-fadeOut'}`}
         onMouseOver={() => onSectionDisplay('shop')}
         onMouseOut={onHoverOut}
       >
-        <ul className="col-span-2 flex flex-wrap gap-4 pl-[10vw] ">
-          <li className="text-center">
+        <nav className="flex space-x-[4vw]">
+          <a href="#" className="inline-block">
             <Image
+              loading="eager"
               width={175}
               height={300}
-              src="/images/Model-S.png"
-              alt="Model S car"
+              src={charger}
+              alt="Charging"
             />
-            <h3>Shop</h3>
-            <p>
-              <a
-                href="#"
-                className="mr-4 inline-block text-sm font-thin underline"
-              >
-                Learn
-              </a>
-              <a href="#" className="inline-block  text-sm font-thin underline">
-                Order
-              </a>
-            </p>
-          </li>
-          <li className="text-center">
+            <p>Charging</p>
+          </a>
+          <a href="#" className="inline-block">
             <Image
+              loading="eager"
               width={175}
-              height={250}
-              src="/images/Model-3.png"
-              alt="Model S car"
+              height={300}
+              src={vehicleAccessories}
+              alt="Vehicle accesories"
             />
-            <h3>Model 3</h3>
-            <p>
-              <a
-                href="#"
-                className="mr-4 inline-block text-sm font-thin underline"
-              >
-                Learn
-              </a>
-              <a href="#" className="inline-block  text-sm font-thin underline">
-                Order
-              </a>
-            </p>
-          </li>
-          <li className="text-center">
+            <p>Vehicle Accesories</p>
+          </a>
+          <a href="#" className="inline-block">
             <Image
+              loading="eager"
               width={175}
-              height={250}
-              src="/images/Model-X.png"
-              alt="Model S car"
+              height={300}
+              src={apparel}
+              alt="Apparel"
             />
-            <h3>Model X</h3>
-            <p>
-              <a
-                href="#"
-                className="mr-4 inline-block text-sm font-thin underline"
-              >
-                Learn
-              </a>
-              <a href="#" className="inline-block  text-sm font-thin underline">
-                Order
-              </a>
-            </p>
-          </li>
-          <li className="text-center">
+            <p>Apparel</p>
+          </a>
+          <a href="#" className="inline-block">
             <Image
+              loading="eager"
               width={175}
-              height={250}
-              src="/images/Model-Y.png"
-              alt="Model S car"
+              height={300}
+              src={lifestyle}
+              alt="Lifestyle"
             />
-            <h3>Model Y</h3>
-            <p>
-              <a
-                href="#"
-                className="mr-4 inline-block text-sm font-thin underline"
-              >
-                Learn
-              </a>
-              <a href="#" className="inline-block  text-sm font-thin underline">
-                Order
-              </a>
-            </p>
-          </li>
-          <li className="text-center">
-            <Image
-              width={175}
-              height={250}
-              src="/images/HMC-RedBlue.png"
-              alt="Model S car"
-            />
-            <h3>Model S</h3>
-            <p>
-              <a
-                href="#"
-                className="mr-4 inline-block text-sm font-thin underline"
-              >
-                Learn
-              </a>
-              <a href="#" className="inline-block  text-sm font-thin underline">
-                Order
-              </a>
-            </p>
-          </li>
-        </ul>
-        <nav className="border-info-alt border-l-2 pl-12 text-sm font-medium">
-          <ul className="space-y-2 [&>li>a]:inline-block">
-            <li>
-              <a href="#">Inventory</a>
-            </li>
-            <li>
-              <a href="#">Used Cars</a>
-            </li>
-            <li>
-              <a href="#">Demo Drive</a>
-            </li>
-            <li>
-              <a href="#">Trade in</a>
-            </li>
-            <li>
-              <a href="#">Help Me Chose</a>
-            </li>
-            <li>
-              <a href="#">Compare</a>
-            </li>
-            <li>
-              <a href="#">Fleet</a>
-            </li>
-            <li>
-              <a href="#">Cybertruck</a>
-            </li>
-            <li>
-              <a href="#">Semi</a>
-            </li>
-            <li>
-              <a href="#">Roadster</a>
-            </li>
-          </ul>
+            <p>Lifestyle</p>
+          </a>
         </nav>
       </section>
 

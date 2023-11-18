@@ -1,6 +1,5 @@
 import { useContext, useState } from 'react';
 import { UIContext } from '@/context/ui/UIContext';
-import Image from 'next/image';
 
 export const DiscoverNav = () => {
   const { onSectionDisplay } = useContext(UIContext);
@@ -18,144 +17,79 @@ export const DiscoverNav = () => {
   return (
     <div className="absolute top-0 z-30 flex h-screen w-screen">
       <section
-        className={`absolute top-0 z-30 grid w-full animate-fadeIn grid-cols-3 bg-white pb-10 pt-28 
+        className={`absolute top-0 z-30 flex w-full animate-fadeIn justify-center bg-white pb-10 pt-28 
         ${hoverOut && 'animate-fadeOut'}`}
         onMouseOver={() => onSectionDisplay('discover')}
         onMouseOut={onHoverOut}
       >
-        <ul className="col-span-2 flex flex-wrap gap-4 pl-[10vw] ">
-          <li className="text-center">
-            <Image
-              width={175}
-              height={300}
-              src="/images/Model-S.png"
-              alt="Model S car"
-            />
-            <h3>Discover</h3>
-            <p>
-              <a
-                href="#"
-                className="mr-4 inline-block text-sm font-thin underline"
-              >
-                Learn
-              </a>
-              <a href="#" className="inline-block  text-sm font-thin underline">
-                Order
-              </a>
-            </p>
-          </li>
-          <li className="text-center">
-            <Image
-              width={175}
-              height={250}
-              src="/images/Model-3.png"
-              alt="Model S car"
-            />
-            <h3>Model 3</h3>
-            <p>
-              <a
-                href="#"
-                className="mr-4 inline-block text-sm font-thin underline"
-              >
-                Learn
-              </a>
-              <a href="#" className="inline-block  text-sm font-thin underline">
-                Order
-              </a>
-            </p>
-          </li>
-          <li className="text-center">
-            <Image
-              width={175}
-              height={250}
-              src="/images/Model-X.png"
-              alt="Model S car"
-            />
-            <h3>Model X</h3>
-            <p>
-              <a
-                href="#"
-                className="mr-4 inline-block text-sm font-thin underline"
-              >
-                Learn
-              </a>
-              <a href="#" className="inline-block  text-sm font-thin underline">
-                Order
-              </a>
-            </p>
-          </li>
-          <li className="text-center">
-            <Image
-              width={175}
-              height={250}
-              src="/images/Model-Y.png"
-              alt="Model S car"
-            />
-            <h3>Model Y</h3>
-            <p>
-              <a
-                href="#"
-                className="mr-4 inline-block text-sm font-thin underline"
-              >
-                Learn
-              </a>
-              <a href="#" className="inline-block  text-sm font-thin underline">
-                Order
-              </a>
-            </p>
-          </li>
-          <li className="text-center">
-            <Image
-              width={175}
-              height={250}
-              src="/images/HMC-RedBlue.png"
-              alt="Model S car"
-            />
-            <h3>Model S</h3>
-            <p>
-              <a
-                href="#"
-                className="mr-4 inline-block text-sm font-thin underline"
-              >
-                Learn
-              </a>
-              <a href="#" className="inline-block  text-sm font-thin underline">
-                Order
-              </a>
-            </p>
-          </li>
-        </ul>
-        <nav className="border-info-alt border-l-2 pl-12 text-sm font-medium">
-          <ul className="space-y-2 [&>li>a]:inline-block">
+        <nav className="flex space-x-[10vw]">
+          <ul className="space-y-2">
+            <h3 className="mb-4 text-gray-500">Resources</h3>
             <li>
-              <a href="#">Inventory</a>
+              <a href="#" className="mr-4 inline-block">
+                Demo Drive
+              </a>
             </li>
             <li>
-              <a href="#">Used Cars</a>
+              <a href="#" className="mr-4 inline-block">
+                Insurance
+              </a>
             </li>
             <li>
-              <a href="#">Demo Drive</a>
+              <a href="#" className="mr-4 inline-block">
+                Video Guides
+              </a>
             </li>
             <li>
-              <a href="#">Trade in</a>
+              <a href="#" className="mr-4 inline-block">
+                Customer Stories
+              </a>
             </li>
             <li>
-              <a href="#">Help Me Chose</a>
+              <a href="#" className="mr-4 inline-block">
+                Events
+              </a>
+            </li>
+          </ul>
+          <ul className="space-y-2">
+            <h3 className="mb-4 text-gray-500">Location Services</h3>
+            <li>
+              <a href="#" className="mr-4 inline-block">
+                Find us
+              </a>
             </li>
             <li>
-              <a href="#">Compare</a>
+              <a href="#" className="mr-4 inline-block">
+                Trip Planner
+              </a>
             </li>
             <li>
-              <a href="#">Fleet</a>
+              <a href="#" className="mr-4 inline-block">
+                Find a Collision Center
+              </a>
             </li>
             <li>
-              <a href="#">Cybertruck</a>
+              <a href="#" className="mr-4 inline-block">
+                Find a Certified
+              </a>
+            </li>
+          </ul>
+          <ul className="space-y-2">
+            <h3 className="mb-4 text-gray-500">Company</h3>
+            <li>
+              <a href="#" className="mr-4 inline-block">
+                About
+              </a>
             </li>
             <li>
-              <a href="#">Semi</a>
+              <a href="#" className="mr-4 inline-block">
+                Careers
+              </a>
             </li>
             <li>
-              <a href="#">Roadster</a>
+              <a href="#" className="mr-4 inline-block">
+                Investor Relations
+              </a>
             </li>
           </ul>
         </nav>
