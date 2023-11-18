@@ -16,112 +16,152 @@ export const DiscoverNav = () => {
   };
 
   return (
-    <div className='h-screen flex absolute top-0 z-30 w-screen'>
+    <div className="absolute top-0 z-30 flex h-screen w-screen">
       <section
-        className={`bg-white grid grid-cols-3 pt-28 pb-10 absolute top-0 w-full z-30 animate-fadeIn 
+        className={`absolute top-0 z-30 grid w-full animate-fadeIn grid-cols-3 bg-white pb-10 pt-28 
         ${hoverOut && 'animate-fadeOut'}`}
         onMouseOver={() => onSectionDisplay('discover')}
         onMouseOut={onHoverOut}
       >
-        <ul className='flex flex-wrap col-span-2 pl-[10vw] gap-4 '>
-          <li className='text-center'>
-            <Image width={175} height={300} src='/images/Model-S.avif' alt='Model S car' />
+        <ul className="col-span-2 flex flex-wrap gap-4 pl-[10vw] ">
+          <li className="text-center">
+            <Image
+              width={175}
+              height={300}
+              src="/images/Model-S.avif"
+              alt="Model S car"
+            />
             <h3>Discover</h3>
             <p>
-              <a href='#' className='inline-block mr-4 underline text-sm font-thin'>
+              <a
+                href="#"
+                className="mr-4 inline-block text-sm font-thin underline"
+              >
                 Learn
               </a>
-              <a href='#' className='inline-block  underline text-sm font-thin'>
+              <a href="#" className="inline-block  text-sm font-thin underline">
                 Order
               </a>
             </p>
           </li>
-          <li className='text-center'>
-            <Image width={175} height={250} src='/images/Model-3.avif' alt='Model S car' />
+          <li className="text-center">
+            <Image
+              width={175}
+              height={250}
+              src="/images/Model-3.avif"
+              alt="Model S car"
+            />
             <h3>Model 3</h3>
             <p>
-              <a href='#' className='inline-block mr-4 underline text-sm font-thin'>
+              <a
+                href="#"
+                className="mr-4 inline-block text-sm font-thin underline"
+              >
                 Learn
               </a>
-              <a href='#' className='inline-block  underline text-sm font-thin'>
+              <a href="#" className="inline-block  text-sm font-thin underline">
                 Order
               </a>
             </p>
           </li>
-          <li className='text-center'>
-            <Image width={175} height={250} src='/images/Model-X.avif' alt='Model S car' />
+          <li className="text-center">
+            <Image
+              width={175}
+              height={250}
+              src="/images/Model-X.avif"
+              alt="Model S car"
+            />
             <h3>Model X</h3>
             <p>
-              <a href='#' className='inline-block mr-4 underline text-sm font-thin'>
+              <a
+                href="#"
+                className="mr-4 inline-block text-sm font-thin underline"
+              >
                 Learn
               </a>
-              <a href='#' className='inline-block  underline text-sm font-thin'>
+              <a href="#" className="inline-block  text-sm font-thin underline">
                 Order
               </a>
             </p>
           </li>
-          <li className='text-center'>
-            <Image width={175} height={250} src='/images/Model-Y.avif' alt='Model S car' />
+          <li className="text-center">
+            <Image
+              width={175}
+              height={250}
+              src="/images/Model-Y.avif"
+              alt="Model S car"
+            />
             <h3>Model Y</h3>
             <p>
-              <a href='#' className='inline-block mr-4 underline text-sm font-thin'>
+              <a
+                href="#"
+                className="mr-4 inline-block text-sm font-thin underline"
+              >
                 Learn
               </a>
-              <a href='#' className='inline-block  underline text-sm font-thin'>
+              <a href="#" className="inline-block  text-sm font-thin underline">
                 Order
               </a>
             </p>
           </li>
-          <li className='text-center'>
-            <Image width={175} height={250} src='/images/HMC-RedBlue.png' alt='Model S car' />
+          <li className="text-center">
+            <Image
+              width={175}
+              height={250}
+              src="/images/HMC-RedBlue.png"
+              alt="Model S car"
+            />
             <h3>Model S</h3>
             <p>
-              <a href='#' className='inline-block mr-4 underline text-sm font-thin'>
+              <a
+                href="#"
+                className="mr-4 inline-block text-sm font-thin underline"
+              >
                 Learn
               </a>
-              <a href='#' className='inline-block  underline text-sm font-thin'>
+              <a href="#" className="inline-block  text-sm font-thin underline">
                 Order
               </a>
             </p>
           </li>
         </ul>
-        <nav className='border-l-2 border-info-alt pl-12 text-sm font-medium'>
-          <ul className='[&>li>a]:inline-block space-y-2'>
+        <nav className="border-info-alt border-l-2 pl-12 text-sm font-medium">
+          <ul className="space-y-2 [&>li>a]:inline-block">
             <li>
-              <a href='#'>Inventory</a>
+              <a href="#">Inventory</a>
             </li>
             <li>
-              <a href='#'>Used Cars</a>
+              <a href="#">Used Cars</a>
             </li>
             <li>
-              <a href='#'>Demo Drive</a>
+              <a href="#">Demo Drive</a>
             </li>
             <li>
-              <a href='#'>Trade in</a>
+              <a href="#">Trade in</a>
             </li>
             <li>
-              <a href='#'>Help Me Chose</a>
+              <a href="#">Help Me Chose</a>
             </li>
             <li>
-              <a href='#'>Compare</a>
+              <a href="#">Compare</a>
             </li>
             <li>
-              <a href='#'>Fleet</a>
+              <a href="#">Fleet</a>
             </li>
             <li>
-              <a href='#'>Cybertruck</a>
+              <a href="#">Cybertruck</a>
             </li>
             <li>
-              <a href='#'>Semi</a>
+              <a href="#">Semi</a>
             </li>
             <li>
-              <a href='#'>Roadster</a>
+              <a href="#">Roadster</a>
             </li>
           </ul>
         </nav>
       </section>
 
-      <div className='backdrop-blur flex-1' />
+      <div className="flex-1 backdrop-blur" />
     </div>
   );
 };

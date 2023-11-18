@@ -12,7 +12,7 @@ export const HeaderSectionProvider = () => {
   const { sectionDisplay } = useContext(UIContext);
 
   return (
-    <section className='h-screen flex fixed top-0 z-30 w-screen'>
+    <section className="fixed top-0 z-30 flex h-screen w-screen">
       {sectionDisplay === 'vehicles' && <VehiclesNav />}
       {sectionDisplay === 'energy' && <EnergyNav />}
       {sectionDisplay === 'charging' && <CharginNav />}

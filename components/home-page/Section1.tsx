@@ -8,17 +8,18 @@ export const HomeSection1 = () => {
   return (
     <HomeSectionComponent srcUrl={'/videos/tesla-video-1.webm'} type={'video'}>
       <HomeSectionHeader>
-        <h2 className='text-5xl font-medium'>Model Y</h2>
-        <p className='text-xl'>Lease starting at $399/mo*</p>
+        <h2 className="text-5xl font-medium">Model Y</h2>
+        <p className="text-xl">Lease starting at $399/mo*</p>
       </HomeSectionHeader>
       <HomeSectionFooter>
-        <div className='[&>a]:inline-block [&>a]:mx-4 [&>a]:my-8 [&>a]:py-3 [&>a]:px-24 gap-8'>
+        <div className="gap-8 [&>a]:mx-4 [&>a]:my-8 [&>a]:inline-block [&>a]:px-24 [&>a]:py-3">
           <ButtonDark>Order now</ButtonDark>
           <ButtonSoft>Demo drive</ButtonSoft>
         </div>
-        <div className='text-sm'>
-          *Excludes taxes and fees with price subject to change. Available in select states.
-          <a href='#' className='underline'>
+        <div className="text-sm">
+          *Excludes taxes and fees with price subject to change. Available in
+          select states.
+          <a href="#" className="underline">
             {' '}
             See Details
           </a>

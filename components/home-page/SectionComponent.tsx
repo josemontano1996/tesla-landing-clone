@@ -8,18 +8,23 @@ interface Props {
   alt?: string;
 }
 
-export const HomeSectionComponent = ({ children, type, srcUrl, alt }: Props) => {
+export const HomeSectionComponent = ({
+  children,
+  type,
+  srcUrl,
+  alt,
+}: Props) => {
   return (
-    <section className='bg-black h-screen text-center relative overflow-hidden text-white'>
-      <div className='z-20 relative h-full flex flex-col'>{children}</div>
-      <div className='absolute top-0 bottom-0 z-10'>
+    <section className="relative h-screen snap-center overflow-hidden bg-black text-center text-white">
+      <div className="relative z-20 flex h-full flex-col">{children}</div>
+      <div className="absolute bottom-0 top-0 z-10">
         {type === 'image' ? (
-          <div className='h-screen w-screen object-cover'>
-            <Image fill objectFit='cover' src={srcUrl} alt={alt || ''} />
+          <div className="h-screen w-screen">
+            <Image fill className="object-cover" src={srcUrl} alt={alt || ''} />
           </div>
         ) : (
           <video
-            className='h-screen w-screen object-cover'
+            className="h-screen w-screen object-cover"
             autoPlay
             muted
             loop

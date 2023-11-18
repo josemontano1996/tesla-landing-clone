@@ -1,8 +1,17 @@
 import { ReactNode } from 'react';
 
-export const ButtonDark = ({ children, href = '#' }: { children: ReactNode; href?: string }) => {
+export const ButtonDark = ({
+  children,
+  href = '#',
+}: {
+  children: ReactNode;
+  href?: string;
+}) => {
   return (
-    <a href={href} className='inline-block bg-info backdrop-blur rounded text-sm font-medium'>
+    <a
+      href={href}
+      className="inline-block rounded bg-info text-sm font-medium backdrop-blur"
+    >
       {children}
     </a>
   );

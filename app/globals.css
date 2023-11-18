@@ -6,7 +6,6 @@ body {
   scrollbar-width: none;
 }
 
-/* Custom scrollbar for Webkit browsers like Chrome or Safari */
 body::-webkit-scrollbar {
   display: none;
 }
