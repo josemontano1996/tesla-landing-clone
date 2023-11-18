@@ -3,7 +3,7 @@ import { ButtonSoft } from '../ui/ButtonSoft';
 import { HomeSectionComponent } from './SectionComponent';
 import { HomeSectionFooter } from './SectionFooter';
 import { HomeSectionHeader } from './SectionHeader';
-import accessories from '@/public/images/Accessories-Desktop-NA-APAC.png';
+import accessories from '@/public/images/Homepage-Accessories-Desktop-NA-APAC.avif';
 
 export const HomeSection9 = () => {
   return (

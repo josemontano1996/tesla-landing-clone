@@ -28,7 +28,7 @@ export const ShopNav = () => {
             <Image
               width={175}
               height={300}
-              src="/images/Model-S.avif"
+              src="/images/Model-S.png"
               alt="Model S car"
             />
             <h3>Shop</h3>
@@ -48,7 +48,7 @@ export const ShopNav = () => {
             <Image
               width={175}
               height={250}
-              src="/images/Model-3.avif"
+              src="/images/Model-3.png"
               alt="Model S car"
             />
             <h3>Model 3</h3>
@@ -68,7 +68,7 @@ export const ShopNav = () => {
             <Image
               width={175}
               height={250}
-              src="/images/Model-X.avif"
+              src="/images/Model-X.png"
               alt="Model S car"
             />
             <h3>Model X</h3>
@@ -88,7 +88,7 @@ export const ShopNav = () => {
             <Image
               width={175}
               height={250}
-              src="/images/Model-Y.avif"
+              src="/images/Model-Y.png"
               alt="Model S car"
             />
             <h3>Model Y</h3>

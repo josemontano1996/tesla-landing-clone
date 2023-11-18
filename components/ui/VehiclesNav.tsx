@@ -2,6 +2,12 @@ import { useContext, useState } from 'react';
 import { UIContext } from '@/context/ui/UIContext';
 import Image from 'next/image';
 
+import modelS from '@/public/images/Mega-Menu-Vehicles-Model-S.avif';
+import model3 from '@/public/images/Mega-Menu-Vehicles-Model-3.avif';
+import modelX from '@/public/images/Mega-Menu-Vehicles-Model-X.avif';
+import modelY from '@/public/images/Mega-Menu-Vehicles-Model-Y.avif';
+import modelDuo from '@/public/images/Mega-Menu-Vehicles-HMC-RedBlue.png';
+
 export const VehiclesNav = () => {
   const { onSectionDisplay } = useContext(UIContext);
   const [hoverOut, setHoverOut] = useState(false);
@@ -26,9 +32,10 @@ export const VehiclesNav = () => {
         <ul className="col-span-2 flex flex-wrap gap-4 pl-[10vw] ">
           <li className="text-center">
             <Image
+              loading="eager"
               width={175}
               height={300}
-              src="/images/Model-S.png"
+              src={modelS}
               alt="Model S car"
             />
             <h3>Model S</h3>
@@ -46,10 +53,11 @@ export const VehiclesNav = () => {
           </li>
           <li className="text-center">
             <Image
+              loading="eager"
               width={175}
-              height={250}
-              src="/images/Model-3.png"
-              alt="Model S car"
+              height={300}
+              src={model3}
+              alt="Model 3 car"
             />
             <h3>Model 3</h3>
             <p>
@@ -66,10 +74,11 @@ export const VehiclesNav = () => {
           </li>
           <li className="text-center">
             <Image
+              loading="eager"
               width={175}
-              height={250}
-              src="/images/Model-X.png"
-              alt="Model S car"
+              height={300}
+              src={modelX}
+              alt="Model X car"
             />
             <h3>Model X</h3>
             <p>
@@ -86,10 +95,11 @@ export const VehiclesNav = () => {
           </li>
           <li className="text-center">
             <Image
+              loading="eager"
               width={175}
-              height={250}
-              src="/images/Model-Y.png"
-              alt="Model S car"
+              height={300}
+              src={modelY}
+              alt="Model Y car"
             />
             <h3>Model Y</h3>
             <p>
@@ -106,21 +116,16 @@ export const VehiclesNav = () => {
           </li>
           <li className="text-center">
             <Image
+              loading="eager"
               width={175}
-              height={250}
-              src="/images/HMC-RedBlue.png"
-              alt="Model S car"
+              height={300}
+              src={modelDuo}
+              alt="Help me choose photo"
             />
-            <h3>Model S</h3>
+            <h3>Help me choose</h3>
             <p>
-              <a
-                href="#"
-                className="mr-4 inline-block text-sm font-thin underline"
-              >
-                Learn
-              </a>
-              <a href="#" className="inline-block  text-sm font-thin underline">
-                Order
+              <a href="#" className="inline-block text-sm font-thin underline">
+                Get stated
               </a>
             </p>
           </li>
@@ -140,7 +145,7 @@ export const VehiclesNav = () => {
               <a href="#">Trade in</a>
             </li>
             <li>
-              <a href="#">Help Me Chose</a>
+              <a href="#">Help Me Choose</a>
             </li>
             <li>
               <a href="#">Compare</a>

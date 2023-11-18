@@ -1,6 +1,10 @@
 import { useContext, useState } from 'react';
 import { UIContext } from '@/context/ui/UIContext';
 import Image from 'next/image';
+import solarPanels from '@/public/images/Mega-Menu-Energy-Solar-Panels.avif';
+import solarRoof from '@/public/images/Mega-Menu-Energy-Solar-Roof.avif';
+import powerWall from '@/public/images/Mega-Menu-Energy-Powerwall-US.avif';
+import megaPack from '@/public/images/Mega-Menu-Energy-Megapack.avif';
 
 export const EnergyNav = () => {
   const { onSectionDisplay } = useContext(UIContext);
@@ -26,10 +30,12 @@ export const EnergyNav = () => {
         <ul className="col-span-2 flex flex-wrap gap-4 pl-[10vw] ">
           <li className="text-center">
             <Image
+              loading="eager"
               width={175}
-              height={300}
-              src="/images/Model-S.avif"
-              alt="Model S car"
+              height={250}
+              className="object-cover"
+              src={solarPanels}
+              alt="Solar panels"
             />
             <h3>Energy</h3>
             <p>
@@ -46,12 +52,14 @@ export const EnergyNav = () => {
           </li>
           <li className="text-center">
             <Image
+              loading="eager"
               width={175}
               height={250}
-              src="/images/Model-3.avif"
-              alt="Model S car"
+              className="object-cover"
+              src={solarRoof}
+              alt="Solar Roof"
             />
-            <h3>Model 3</h3>
+            <h3>Solar Roof</h3>
             <p>
               <a
                 href="#"
@@ -66,12 +74,14 @@ export const EnergyNav = () => {
           </li>
           <li className="text-center">
             <Image
+              loading="eager"
               width={175}
               height={250}
-              src="/images/Model-X.avif"
-              alt="Model S car"
+              className="object-cover"
+              src={powerWall}
+              alt="Powerwall"
             />
-            <h3>Model X</h3>
+            <h3>PowerWall</h3>
             <p>
               <a
                 href="#"
@@ -86,32 +96,14 @@ export const EnergyNav = () => {
           </li>
           <li className="text-center">
             <Image
+              loading="eager"
               width={175}
               height={250}
-              src="/images/Model-Y.avif"
-              alt="Model S car"
+              className="object-cover"
+              src={megaPack}
+              alt="Megapack"
             />
-            <h3>Model Y</h3>
-            <p>
-              <a
-                href="#"
-                className="mr-4 inline-block text-sm font-thin underline"
-              >
-                Learn
-              </a>
-              <a href="#" className="inline-block  text-sm font-thin underline">
-                Order
-              </a>
-            </p>
-          </li>
-          <li className="text-center">
-            <Image
-              width={175}
-              height={250}
-              src="/images/HMC-RedBlue.png"
-              alt="Model S car"
-            />
-            <h3>Model S</h3>
+            <h3>Megapack</h3>
             <p>
               <a
                 href="#"
@@ -128,34 +120,25 @@ export const EnergyNav = () => {
         <nav className="border-info-alt border-l-2 pl-12 text-sm font-medium">
           <ul className="space-y-2 [&>li>a]:inline-block">
             <li>
-              <a href="#">Inventory</a>
+              <a href="#">Schedule a Consultation</a>
             </li>
             <li>
-              <a href="#">Used Cars</a>
+              <a href="#">Why Solar</a>
             </li>
             <li>
-              <a href="#">Demo Drive</a>
+              <a href="#">Incentives</a>
             </li>
             <li>
-              <a href="#">Trade in</a>
+              <a href="#">Support</a>
             </li>
             <li>
-              <a href="#">Help Me Chose</a>
+              <a href="#">Partner with Tesla</a>
             </li>
             <li>
-              <a href="#">Compare</a>
+              <a href="#">Commercial</a>
             </li>
             <li>
-              <a href="#">Fleet</a>
-            </li>
-            <li>
-              <a href="#">Cybertruck</a>
-            </li>
-            <li>
-              <a href="#">Semi</a>
-            </li>
-            <li>
-              <a href="#">Roadster</a>
+              <a href="#">Utilities</a>
             </li>
           </ul>
         </nav>
