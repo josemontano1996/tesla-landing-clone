@@ -12,12 +12,16 @@ export const HeaderSectionProvider = () => {
   const { sectionDisplay } = useContext(UIContext);
 
   return (
-    <section className="fixed top-0 z-30 flex h-screen w-screen text-black">
-      {sectionDisplay === 'vehicles' && <VehiclesNav />}
-      {sectionDisplay === 'energy' && <EnergyNav />}
-      {sectionDisplay === 'charging' && <CharginNav />}
-      {sectionDisplay === 'discover' && <DiscoverNav />}
-      {sectionDisplay === 'shop' && <ShopNav />}
-    </section>
+    <>
+      {sectionDisplay && (
+        <section className="fixed top-0 z-30 flex h-screen w-screen text-black">
+          {sectionDisplay === 'vehicles' && <VehiclesNav />}
+          {sectionDisplay === 'energy' && <EnergyNav />}
+          {sectionDisplay === 'charging' && <CharginNav />}
+          {sectionDisplay === 'discover' && <DiscoverNav />}
+          {sectionDisplay === 'shop' && <ShopNav />}
+        </section>
+      )}
+    </>
   );
 };
