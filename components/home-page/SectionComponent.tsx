@@ -20,7 +20,7 @@ export const HomeSectionComponent = ({
       <div className="absolute bottom-0 top-0 z-10">
         {type === 'image' ? (
           <div className="h-screen w-screen">
-            <Image fill className="object-cover" src={srcUrl} alt={alt || ''} />
+            <Image loading='eager' fill className="object-cover" src={srcUrl} alt={alt || ''} />
           </div>
         ) : (
           <video
