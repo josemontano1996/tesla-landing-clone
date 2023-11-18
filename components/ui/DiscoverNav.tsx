@@ -19,8 +19,7 @@ export const DiscoverNav = () => {
       <section
         className={`absolute top-0 z-30 flex w-full animate-fadeIn justify-center bg-white pb-10 pt-28 
         ${hoverOut && 'animate-fadeOut'}`}
-        onMouseOver={() => onSectionDisplay('discover')}
-        onMouseOut={onHoverOut}
+        onMouseLeave={onHoverOut}
       >
         <nav className="flex space-x-[10vw]">
           <ul className="space-y-2">

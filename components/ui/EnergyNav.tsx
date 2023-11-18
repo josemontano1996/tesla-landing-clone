@@ -24,8 +24,7 @@ export const EnergyNav = () => {
       <section
         className={`absolute top-0 z-30 grid w-full animate-fadeIn grid-cols-3 bg-white pb-10 pt-28 
         ${hoverOut && 'animate-fadeOut'}`}
-        onMouseOver={() => onSectionDisplay('energy')}
-        onMouseOut={onHoverOut}
+        onMouseLeave={onHoverOut}
       >
         <ul className="col-span-2 flex flex-wrap gap-4 pl-[10vw] ">
           <li className="text-center">

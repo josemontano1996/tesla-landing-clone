@@ -23,8 +23,7 @@ export const CharginNav = () => {
       <section
         className={`absolute top-0 z-30 grid w-full animate-fadeIn grid-cols-3 bg-white pb-10 pt-28 
         ${hoverOut && 'animate-fadeOut'}`}
-        onMouseOver={() => onSectionDisplay('charging')}
-        onMouseOut={onHoverOut}
+        onMouseLeave={onHoverOut}
       >
         <ul className="col-span-2 flex flex-wrap gap-4 space-x-4 pl-[20vw]">
           <li className="text-center">
@@ -111,7 +110,6 @@ export const CharginNav = () => {
             <li>
               <a href="#">Host Wall Conectors</a>
             </li>
-
           </ul>
         </nav>
       </section>

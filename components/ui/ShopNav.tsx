@@ -5,7 +5,7 @@ import charger from '@/public/images/Mega-Menu-Shop-Charging.png';
 import vehicleAccessories from '@/public/images/Mega-Menu-Shop-Vehicle-Accessories.png';
 import apparel from '@/public/images/Mega-Menu-Shop-Apparel.png';
 import lifeStyle from '@/public/images/Mega-Menu-Shop-Lifestyle.png';
-import lifestyle from '@/public/images/Mega-Menu-Shop-Lifestyle.png';
+
 
 export const ShopNav = () => {
   const { onSectionDisplay } = useContext(UIContext);
@@ -25,8 +25,7 @@ export const ShopNav = () => {
       <section
         className={`absolute top-0 z-30  flex w-full animate-fadeIn justify-center bg-white pb-10 pt-28 text-center 
         ${hoverOut && 'animate-fadeOut'}`}
-        onMouseOver={() => onSectionDisplay('shop')}
-        onMouseOut={onHoverOut}
+        onMouseLeave={onHoverOut}
       >
         <nav className="flex space-x-[4vw]">
           <a href="#" className="inline-block">
@@ -64,7 +63,7 @@ export const ShopNav = () => {
               loading="eager"
               width={175}
               height={300}
-              src={lifestyle}
+              src={lifeStyle}
               alt="Lifestyle"
             />
             <p>Lifestyle</p>
