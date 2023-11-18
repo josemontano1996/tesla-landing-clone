@@ -1,6 +1,9 @@
 import { useContext, useState } from 'react';
 import { UIContext } from '@/context/ui/UIContext';
 import Image from 'next/image';
+import charging from '@/public/images/Mega-Menu-Charging-Charging.png';
+import homeCharging from '@/public/images/Mega-Menu-Charging-Home-Charging.png';
+import superCharging from '@/public/images/Mega-Menu-Charging-Supercharging-NA.png';
 
 export const CharginNav = () => {
   const { onSectionDisplay } = useContext(UIContext);
@@ -23,13 +26,14 @@ export const CharginNav = () => {
         onMouseOver={() => onSectionDisplay('charging')}
         onMouseOut={onHoverOut}
       >
-        <ul className="col-span-2 flex flex-wrap gap-4 pl-[10vw] ">
+        <ul className="col-span-2 flex flex-wrap gap-4 space-x-4 pl-[20vw]">
           <li className="text-center">
             <Image
+              loading="eager"
               width={175}
               height={300}
-              src="/images/Model-S.png"
-              alt="Model S car"
+              src={charging}
+              alt="Charger"
             />
             <h3>Charging</h3>
             <p>
@@ -39,19 +43,20 @@ export const CharginNav = () => {
               >
                 Learn
               </a>
-              <a href="#" className="inline-block  text-sm font-thin underline">
+              <a href="#" className="inline-block text-sm font-thin underline">
                 Order
               </a>
             </p>
           </li>
           <li className="text-center">
             <Image
+              loading="eager"
               width={175}
-              height={250}
-              src="/images/Model-3.png"
-              alt="Model S car"
+              height={300}
+              src={homeCharging}
+              alt="Home charging"
             />
-            <h3>Model 3</h3>
+            <h3>Home Charging</h3>
             <p>
               <a
                 href="#"
@@ -66,52 +71,13 @@ export const CharginNav = () => {
           </li>
           <li className="text-center">
             <Image
+              loading="eager"
               width={175}
-              height={250}
-              src="/images/Model-X.png"
-              alt="Model S car"
+              height={300}
+              src={superCharging}
+              alt="Super Charging"
             />
-            <h3>Model X</h3>
-            <p>
-              <a
-                href="#"
-                className="mr-4 inline-block text-sm font-thin underline"
-              >
-                Learn
-              </a>
-              <a href="#" className="inline-block  text-sm font-thin underline">
-                Order
-              </a>
-            </p>
-          </li>
-          <li className="text-center">
-            <Image
-              width={175}
-              height={250}
-              src="/images/Model-Y.png"
-              alt="Model S car"
-            />
-            <h3>Model Y</h3>
-            <p>
-              <a
-                href="#"
-                className="mr-4 inline-block text-sm font-thin underline"
-              >
-                Learn
-              </a>
-              <a href="#" className="inline-block  text-sm font-thin underline">
-                Order
-              </a>
-            </p>
-          </li>
-          <li className="text-center">
-            <Image
-              width={175}
-              height={250}
-              src="/images/HMC-RedBlue.png"
-              alt="Model S car"
-            />
-            <h3>Model S</h3>
+            <h3>Super Charging</h3>
             <p>
               <a
                 href="#"
@@ -128,35 +94,24 @@ export const CharginNav = () => {
         <nav className="border-info-alt border-l-2 pl-12 text-sm font-medium">
           <ul className="space-y-2 [&>li>a]:inline-block">
             <li>
-              <a href="#">Inventory</a>
+              <a href="#">Charging calculator</a>
             </li>
             <li>
-              <a href="#">Used Cars</a>
+              <a href="#">Trip Planner</a>
             </li>
             <li>
-              <a href="#">Demo Drive</a>
+              <a href="#">Supercharge Voting</a>
             </li>
             <li>
-              <a href="#">Trade in</a>
+              <a href="#">Host a Supercharger</a>
             </li>
             <li>
-              <a href="#">Help Me Chose</a>
+              <a href="#">Commercial Charging</a>
             </li>
             <li>
-              <a href="#">Compare</a>
+              <a href="#">Host Wall Conectors</a>
             </li>
-            <li>
-              <a href="#">Fleet</a>
-            </li>
-            <li>
-              <a href="#">Cybertruck</a>
-            </li>
-            <li>
-              <a href="#">Semi</a>
-            </li>
-            <li>
-              <a href="#">Roadster</a>
-            </li>
+
           </ul>
         </nav>
       </section>

@@ -2,10 +2,10 @@ import { useContext, useState } from 'react';
 import { UIContext } from '@/context/ui/UIContext';
 import Image from 'next/image';
 
-import modelS from '@/public/images/Mega-Menu-Vehicles-Model-S.avif';
-import model3 from '@/public/images/Mega-Menu-Vehicles-Model-3.avif';
-import modelX from '@/public/images/Mega-Menu-Vehicles-Model-X.avif';
-import modelY from '@/public/images/Mega-Menu-Vehicles-Model-Y.avif';
+import modelS from '@/public/images/Model-S.png';
+import model3 from '@/public/images/Model-3.png';
+import modelX from '@/public/images/Model-X.png';
+import modelY from '@/public/images/Model-Y.png';
 import modelDuo from '@/public/images/Mega-Menu-Vehicles-HMC-RedBlue.png';
 
 export const VehiclesNav = () => {

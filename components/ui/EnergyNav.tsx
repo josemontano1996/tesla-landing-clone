@@ -1,10 +1,10 @@
 import { useContext, useState } from 'react';
 import { UIContext } from '@/context/ui/UIContext';
 import Image from 'next/image';
-import solarPanels from '@/public/images/Mega-Menu-Energy-Solar-Panels.avif';
-import solarRoof from '@/public/images/Mega-Menu-Energy-Solar-Roof.avif';
-import powerWall from '@/public/images/Mega-Menu-Energy-Powerwall-US.avif';
-import megaPack from '@/public/images/Mega-Menu-Energy-Megapack.avif';
+import solarPanels from '@/public/images/Mega-Menu-Energy-Solar-Panels.png';
+import solarRoof from '@/public/images/Mega-Menu-Energy-Solar-Roof.png';
+import powerWall from '@/public/images/Mega-Menu-Energy-Powerwall-US.png';
+import megaPack from '@/public/images/Mega-Menu-Energy-Megapack.png';
 
 export const EnergyNav = () => {
   const { onSectionDisplay } = useContext(UIContext);

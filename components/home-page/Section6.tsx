@@ -3,7 +3,7 @@ import { ButtonSoft } from '../ui/ButtonSoft';
 import { HomeSectionComponent } from './SectionComponent';
 import { HomeSectionFooter } from './SectionFooter';
 import { HomeSectionHeader } from './SectionHeader';
-import solarPanels from '@/public/images/425_HP_SolarPanels_D.avif';
+import solarPanels from '@/public/images/425_HP_SolarPanels_D.png';
 
 export const HomeSection6 = () => {
   return (

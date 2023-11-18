@@ -3,7 +3,7 @@ import { ButtonSoft } from '../ui/ButtonSoft';
 import { HomeSectionComponent } from './SectionComponent';
 import { HomeSectionFooter } from './SectionFooter';
 import { HomeSectionHeader } from './SectionHeader';
-import modelXDesktop from '@/public/images/Homepage-Model-X-Desktop-LHD.avif';
+import modelXDesktop from '@/public/images/Model-X-Desktop-LHD.png';
 
 export const HomeSection3 = () => {
   return (

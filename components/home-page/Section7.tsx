@@ -3,7 +3,7 @@ import { ButtonSoft } from '../ui/ButtonSoft';
 import { HomeSectionComponent } from './SectionComponent';
 import { HomeSectionFooter } from './SectionFooter';
 import { HomeSectionHeader } from './SectionHeader';
-import solarRoof from '@/public/images/Homepage-SolarRoof-Desktop-Global.avif';
+import solarRoof from '@/public/images/SolarRoof-Desktop-Global.png';
 
 export const HomeSection7 = () => {
   return (

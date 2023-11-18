@@ -3,7 +3,7 @@ import { ButtonSoft } from '../ui/ButtonSoft';
 import { HomeSectionComponent } from './SectionComponent';
 import { HomeSectionFooter } from './SectionFooter';
 import { HomeSectionHeader } from './SectionHeader';
-import powerWall from '@/public/images/Homepage-Powerwall-Desktop.avif';
+import powerWall from '@/public/images/Powerwall-Desktop.png';
 
 export const HomeSection8 = () => {
   return (
