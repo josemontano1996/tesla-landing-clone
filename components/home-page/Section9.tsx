@@ -1,5 +1,4 @@
-import { ButtonDark } from '../ui/ButtonDark';
-import { ButtonSoft } from '../ui/ButtonSoft';
+import { ButtonWhite } from '../ui/ButtonWhite';
 import { HomeSectionComponent } from './SectionComponent';
 import { HomeSectionFooter } from './SectionFooter';
 import { HomeSectionHeader } from './SectionHeader';
@@ -9,21 +8,36 @@ export const HomeSection9 = () => {
   return (
     <HomeSectionComponent srcUrl={accessories} type={'image'} mainColor="black">
       <HomeSectionHeader>
-        <h2 className="text-5xl font-medium">Powerwall</h2>
-        <p className="text-xl">Lease starting at $329/mo*</p>
+        <h2 className="mt-4 text-5xl font-medium">Accesories</h2>
       </HomeSectionHeader>
       <HomeSectionFooter>
         <div className="gap-8 [&>a]:mx-4 [&>a]:my-8 [&>a]:inline-block [&>a]:px-24 [&>a]:py-3">
-          <ButtonSoft>Order now</ButtonSoft>
-          <ButtonDark>Demo drive</ButtonDark>
+          <ButtonWhite>Shop Now</ButtonWhite>
         </div>
-        <div className="text-sm">
-          *Excludes taxes and fees with price subject to change. Available in
-          select states.
-          <a href="#" className="underline">
-            {' '}
-            See Details
-          </a>
+        <div className="flex justify-center text-xs text-white mb-4">
+          <div className="flex gap-4">
+            <a href="#" className="inline-block">
+              Tesla &copy; 2023{' '}
+            </a>
+            <a href="#" className="inline-block">
+              Privacy & Legal
+            </a>
+            <a href="#" className="inline-block">
+              Vehicle Recalls
+            </a>
+            <a href="#" className="inline-block">
+              Contact
+            </a>
+            <a href="#" className="inline-block">
+              News
+            </a>
+            <a href="#" className="inline-block">
+              Get Updates
+            </a>
+            <a href="#" className="inline-block">
+              Locations
+            </a>
+          </div>
         </div>
       </HomeSectionFooter>
     </HomeSectionComponent>

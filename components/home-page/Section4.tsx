@@ -7,22 +7,29 @@ import modelSDesktop from '@/public/images/Model-S-Desktop-LHD.png';
 
 export const HomeSection4 = () => {
   return (
-    <HomeSectionComponent srcUrl={modelSDesktop} type={'image'} mainColor='black'>
+    <HomeSectionComponent
+      srcUrl={modelSDesktop}
+      type={'image'}
+      mainColor="black"
+    >
       <HomeSectionHeader>
-        <h2 className="text-5xl font-medium">Model S</h2>
-        <p className="text-xl">Lease starting at $329/mo*</p>
+        <h2 className="mb-1 text-5xl font-medium">Model S</h2>
+        <p className="text-xl">From $71,090*</p>
+        <p className="text-xs">After Est. Gas Savings</p>
       </HomeSectionHeader>
       <HomeSectionFooter>
         <div className="gap-8 [&>a]:mx-4 [&>a]:my-8 [&>a]:inline-block [&>a]:px-24 [&>a]:py-3">
-          <ButtonSoft>Order now</ButtonSoft>
-          <ButtonDark>Demo drive</ButtonDark>
+          <ButtonSoft>Order Now</ButtonSoft>
+          <ButtonDark>Demo Drive</ButtonDark>
         </div>
-        <div className="text-sm">
-          *Excludes taxes and fees with price subject to change. Available in
-          select states.
+        <div className="text-xs text-black">
+          <div>
+            *Price before savings is $74,990, excluding taxes and fees. Subject
+            to change.
+          </div>
           <a href="#" className="underline">
             {' '}
-            See Details
+            Learn about est. gas savings.
           </a>
         </div>
       </HomeSectionFooter>

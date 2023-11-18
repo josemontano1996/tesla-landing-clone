@@ -1,4 +1,11 @@
-This page was created only with recreational purposes. I do not posses copyright of any of the assets used
-in order to create the webpage. This page is a copy of the official Tesla webpage. https://www.tesla.com/
+Disclaimer: Recreational Purpose Notice
 
-Favicons generated with: https://favicon.io/favicon-converter/
+This page has been created solely for recreational and educational purposes. I do not claim any ownership or copyright of the assets used in the creation of this webpage. The design elements and content have been inspired by the official Tesla website available at https://www.tesla.com/.
+
+Please note that this website is not affiliated with or endorsed by Tesla, Inc. The use of design elements, images, and layout resembling the official Tesla website is purely for demonstration and educational purposes, aiming to showcase web development skills.
+
+Favicons on this site were generated using https://favicon.io/favicon-converter.
+
+All rights and credits for the original design, content, and assets used on the official Tesla website belong to Tesla, Inc. If any concerns arise regarding the content or design of this webpage, please contact me for immediate action.
+
+Thank you for understanding the recreational nature of this project.

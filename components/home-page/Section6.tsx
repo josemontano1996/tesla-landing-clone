@@ -7,23 +7,15 @@ import solarPanels from '@/public/images/425_HP_SolarPanels_D.png';
 
 export const HomeSection6 = () => {
   return (
-    <HomeSectionComponent srcUrl={solarPanels} type={'image'} mainColor='black'>
+    <HomeSectionComponent srcUrl={solarPanels} type={'image'} mainColor="black">
       <HomeSectionHeader>
-        <h2 className="text-5xl font-medium">Solar Panels</h2>
-        <p className="text-xl">Lease starting at $329/mo*</p>
+        <h2 className="text-5xl font-medium mb-3">Solar Panels</h2>
+        <a className="inline-block text-sm underline">Schedule a Virtual Consultation</a>
       </HomeSectionHeader>
       <HomeSectionFooter>
-        <div className="gap-8 [&>a]:mx-4 [&>a]:my-8 [&>a]:inline-block [&>a]:px-24 [&>a]:py-3">
-          <ButtonSoft>Order now</ButtonSoft>
-          <ButtonDark>Demo drive</ButtonDark>
-        </div>
-        <div className="text-sm">
-          *Excludes taxes and fees with price subject to change. Available in
-          select states.
-          <a href="#" className="underline">
-            {' '}
-            See Details
-          </a>
+        <div className="gap-8 [&>a]:mx-4 [&>a]:my-16 [&>a]:inline-block [&>a]:px-24 [&>a]:py-3">
+          <ButtonSoft>Order Now</ButtonSoft>
+          <ButtonDark>Learn More</ButtonDark>
         </div>
       </HomeSectionFooter>
     </HomeSectionComponent>
