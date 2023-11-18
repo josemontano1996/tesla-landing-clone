@@ -1,18 +1,40 @@
 'use client';
 
 import { UIContext } from '@/context/ui/UIContext';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { HeaderSectionProvider } from '../providers/HeaderSectionProvider';
 import { HeaderMidLi } from './HeaderMidLi';
 
 export const Header = () => {
   const { sectionDisplay } = useContext(UIContext);
 
+  useEffect(() => {
+    const $header = document.querySelector('#header') as HTMLElement;
+    const observerOptions = {
+      root: null,
+      roorMargin: '0px',
+      threshold: 0.7,
+    };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const { isIntersecting } = entry;
+        if (isIntersecting) {
+          const color = entry.target.getAttribute('data-main-color');
+          $header.style.color = color || 'white';
+        }
+      });
+    }, observerOptions);
+
+    const $section = document.querySelectorAll('.landing-section');
+
+    $section.forEach((section) => observer.observe(section));
+  }, []);
+
   return (
-    <header>
+    <header id="header" className="text-white">
       <div
         className={`fixed top-0 z-40 flex w-full items-center justify-between px-10 py-3
-      ${sectionDisplay ? 'text-black' : 'text-white'}`}
+      ${sectionDisplay && 'text-black'}`}
       >
         <div className="h-6 w-32 flex-1">
           <a href="/">

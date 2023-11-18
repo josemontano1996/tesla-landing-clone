@@ -10,7 +10,7 @@ export const ButtonDark = ({
   return (
     <a
       href={href}
-      className="inline-block rounded bg-info text-sm font-medium backdrop-blur"
+      className="inline-block rounded bg-info text-white text-sm font-medium backdrop-blur"
     >
       {children}
     </a>

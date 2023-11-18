@@ -7,7 +7,7 @@ import modelSDesktop from '@/public/images/Model-S-Desktop-LHD.png';
 
 export const HomeSection4 = () => {
   return (
-    <HomeSectionComponent srcUrl={modelSDesktop} type={'image'}>
+    <HomeSectionComponent srcUrl={modelSDesktop} type={'image'} mainColor='black'>
       <HomeSectionHeader>
         <h2 className="text-5xl font-medium">Model S</h2>
         <p className="text-xl">Lease starting at $329/mo*</p>

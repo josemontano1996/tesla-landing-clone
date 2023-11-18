@@ -7,7 +7,7 @@ import solarRoof from '@/public/images/SolarRoof-Desktop-Global.png';
 
 export const HomeSection7 = () => {
   return (
-    <HomeSectionComponent srcUrl={solarRoof} type={'image'}>
+    <HomeSectionComponent srcUrl={solarRoof} type={'image'} mainColor='black'>
       <HomeSectionHeader>
         <h2 className="text-5xl font-medium">Solar Roof</h2>
         <p className="text-xl">Lease starting at $329/mo*</p>

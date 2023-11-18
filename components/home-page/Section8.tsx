@@ -7,7 +7,7 @@ import powerWall from '@/public/images/Powerwall-Desktop.png';
 
 export const HomeSection8 = () => {
   return (
-    <HomeSectionComponent srcUrl={powerWall} type={'image'}>
+    <HomeSectionComponent srcUrl={powerWall} type={'image'} mainColor='black'>
       <HomeSectionHeader>
         <h2 className="text-5xl font-medium">Powerwall</h2>
         <p className="text-xl">Lease starting at $329/mo*</p>

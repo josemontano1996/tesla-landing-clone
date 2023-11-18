@@ -7,7 +7,7 @@ import accessories from '@/public/images/Accessories-Desktop-NA-APAC.png';
 
 export const HomeSection9 = () => {
   return (
-    <HomeSectionComponent srcUrl={accessories} type={'image'}>
+    <HomeSectionComponent srcUrl={accessories} type={'image'} mainColor="black">
       <HomeSectionHeader>
         <h2 className="text-5xl font-medium">Powerwall</h2>
         <p className="text-xl">Lease starting at $329/mo*</p>

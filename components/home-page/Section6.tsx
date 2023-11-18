@@ -7,7 +7,7 @@ import solarPanels from '@/public/images/425_HP_SolarPanels_D.png';
 
 export const HomeSection6 = () => {
   return (
-    <HomeSectionComponent srcUrl={solarPanels} type={'image'}>
+    <HomeSectionComponent srcUrl={solarPanels} type={'image'} mainColor='black'>
       <HomeSectionHeader>
         <h2 className="text-5xl font-medium">Solar Panels</h2>
         <p className="text-xl">Lease starting at $329/mo*</p>
