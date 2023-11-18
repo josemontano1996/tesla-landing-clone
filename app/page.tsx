@@ -1,9 +1,11 @@
-import { Section1 } from '@/components/home-page/Section1';
+import { HomeSection1 } from '@/components/home-page/Section1';
+import { HomeSection2 } from '@/components/home-page/Section2';
 
 export default function Home() {
   return (
     <>
-      <Section1 />
+      <HomeSection1 />
+      <HomeSection2 /> 
     </>
   );
 }

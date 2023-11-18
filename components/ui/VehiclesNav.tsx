@@ -16,8 +16,8 @@ export const VehiclesNav = () => {
   };
 
   return (
-    <div className='h-screen flex absolute top-0 z-30 w-screen'>
-      <section
+    <div>
+      <nav
         className={`bg-white grid grid-cols-3 pt-28 pb-10 absolute top-0 w-full z-30 animate-fadeIn 
         ${hoverOut && 'animate-fadeOut'}`}
         onMouseOver={() => onSectionDisplay('vehicles')}
@@ -119,8 +119,7 @@ export const VehiclesNav = () => {
             </li>
           </ul>
         </nav>
-      </section>
-
+      </nav>
       <div className='backdrop-blur flex-1' />
     </div>
   );
