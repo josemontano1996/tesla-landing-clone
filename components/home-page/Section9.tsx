@@ -14,10 +14,14 @@ export const HomeSection9 = () => {
         <div className="gap-8 [&>a]:mx-4 [&>a]:my-8 [&>a]:inline-block [&>a]:px-24 [&>a]:py-3">
           <ButtonWhite>Shop Now</ButtonWhite>
         </div>
-        <div className="flex justify-center text-xs text-white mb-4">
+        <div className="mb-4 flex justify-center text-xs text-white">
           <div className="flex gap-4">
-            <a href="#" className="inline-block">
-              Tesla &copy; 2023{' '}
+            <a
+              target='_blank'
+              href="https://jm3development.vercel.app"
+              className="inline-block"
+            >
+              Developed by <span className="underline">jm3</span>
             </a>
             <a href="#" className="inline-block">
               Privacy & Legal
