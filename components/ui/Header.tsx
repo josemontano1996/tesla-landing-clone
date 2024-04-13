@@ -62,6 +62,15 @@ export const Header = () => {
         <nav className="flex flex-1 justify-end">
           <ul className="flex [&>li>a]:inline-block [&>li>a]:h-4 [&>li>a]:w-6 [&>li]:px-2 [&>li]:py-2">
             <li>
+              <a
+                href="https://www.jm3.dev"
+                target="_blank"
+                className="block min-w-max hover:cursor-pointer hover:underline"
+              >
+                Developed by jm3
+              </a>
+            </li>
+            <li>
               <a href="#">
                 <svg
                   className="tds-icon tds-icon-help"
