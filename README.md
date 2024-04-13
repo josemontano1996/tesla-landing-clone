@@ -46,7 +46,7 @@ This project is a non-commercial educational clone and is not affiliated with Te
 ## Author
 
 - [Jose Manuel Montano Mengual](https://www.linkedin.com/in/josemanuelmontanomengual)
-- [Portfolio](https://jm3development.vercel.app)
+- [Portfolio](https://www.jm3.dev)
 - [Github](https://github.com/josemontano1996)
 
 ## License
